@@ -88,20 +88,30 @@
 
 <div>
   <h2>📁 Project Structure</h2>
-  <pre>
+  <pre style="font-family: monospace;">
 InventoryManagementApp/
-├── admin-dashboard-inventory.png
-├── admin-login-inventory.png
-├── user-dashboard-inventory.png
-├── login-inventroy.png
-├── inventorymanagementapp/       # Main package containing application logic
-│   ├── AdminDashboard.java       # Admin control panel and dashboard UI
-│   ├── AdminLoginForm.java       # Admin login screen
-│   ├── CreateUserForm.java       # User registration form
-│   ├── Login.java                # Application entry point with login interface
-│   └── Tables.java               # JTable and inventory-related functionality
+├── <a href="Orders.png">Orders.png</a>
+├── <a href="Orders_background.png">Orders_background.png</a>
+├── <a href="Users.png">Users.png</a>
+├── <a href="View-orders.png">View-orders.png</a>
+├── <a href="category.png">category.png</a>
+├── <a href="close.png">close.png</a>
+├── <a href="customers.png">customers.png</a>
+├── <a href="home_background.png">home_background.png</a>
+├── <a href="login-background.PNG">login-background.PNG</a>
+├── <a href="login.png">login.png</a>
+├── <a href="payments.png">payments.png</a>
+├── <a href="product.png">product.png</a>
+├── <a href="save.png">save.png</a>
+└── <a href="inventorymanagementapp/">inventorymanagementapp/</a>
+    ├── <a href="inventorymanagementapp/AdminDashboard.java">AdminDashboard.java</a>
+    ├── <a href="inventorymanagementapp/AdminLoginForm.java">AdminLoginForm.java</a>
+    ├── <a href="inventorymanagementapp/CreateUserForm.java">CreateUserForm.java</a>
+    ├── <a href="inventorymanagementapp/Login.java">Login.java</a>
+    └── <a href="inventorymanagementapp/Tables.java">Tables.java</a>
   </pre>
 </div>
+
 
 ---
 
