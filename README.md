@@ -104,11 +104,11 @@ InventoryManagementApp/
 ├── <a href="product.png">product.png</a>
 ├── <a href="save.png">save.png</a>
 └── <a href="inventorymanagementapp/">inventorymanagementapp/</a>
-    ├── <a href="inventorymanagementapp/AdminDashboard.java">AdminDashboard.java</a>
-    ├── <a href="inventorymanagementapp/AdminLoginForm.java">AdminLoginForm.java</a>
-    ├── <a href="inventorymanagementapp/CreateUserForm.java">CreateUserForm.java</a>
-    ├── <a href="inventorymanagementapp/Login.java">Login.java</a>
-    └── <a href="inventorymanagementapp/Tables.java">Tables.java</a>
+    ├── <a href="AdminDashboard.java">AdminDashboard.java</a>
+    ├── <a href="AdminLoginForm.java">AdminLoginForm.java</a>
+    ├── <a href="CreateUserForm.java">CreateUserForm.java</a>
+    ├── <a href="Login.java">Login.java</a>
+    └── <a href="Tables.java">Tables.java</a>
   </pre>
 </div>
 
