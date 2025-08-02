@@ -44,8 +44,9 @@
       <tr><td><strong>Java</strong></td><td>Main programming language</td></tr>
       <tr><td><strong>Java Swing</strong></td><td>GUI development for desktop UI</td></tr>
       <tr><td><strong>JTable</strong></td><td>Displaying tabular inventory data</td></tr>
+      <tr><td><strong>MySQL</strong></td><td>Database backend for inventory data</td></tr>
       <tr><td><strong>NetBeans</strong></td><td>Recommended IDE for Swing-based development</td></tr>
-      <tr><td><strong>XAMPP (Optional)</strong></td><td>Can be used if you want to integrate a MySQL database</td></tr>
+      <tr><td><strong>XAMPP</strong></td><td>MySQL server for local database setup</td></tr>
     </tbody>
   </table>
 </div>
@@ -53,17 +54,33 @@
 ---
 
 <div>
-  <h2>📦 Installation</h2>
+  <h2>🚀 Getting Started</h2>
   <ol>
-    <li>Install <strong>Java JDK</strong> (version 8 or higher)</li>
-    <li>Install <strong>NetBeans IDE</strong> (recommended for Swing development)</li>
-    <li>Optional: Install <strong>XAMPP</strong> if you plan to add MySQL or PHPMyAdmin integration</li>
-    <li>Clone this repository:
+    <li>📦 <strong>Clone the repository:</strong>
       <pre><code>git clone https://github.com/MossarrafHossainRobin/InventoryManagementApp.git</code></pre>
     </li>
-    <li>Open the project in NetBeans: <br/> File → Open Project → Navigate to the downloaded folder</li>
-    <li>Build the project to resolve dependencies</li>
-    <li>Run <code>Login.java</code> to launch the application</li>
+    <li>🔧 <strong>Open the project in NetBeans IDE.</strong></li>
+    <li>💾 <strong>Setup the Database:</strong>
+      <ul>
+        <li>Install <a href="https://www.apachefriends.org/index.html" target="_blank">XAMPP</a>.</li>
+        <li>Start <strong>Apache</strong> and <strong>MySQL</strong> modules from XAMPP Control Panel.</li>
+        <li>Go to <a href="http://localhost/phpmyadmin" target="_blank">phpMyAdmin</a>.</li>
+        <li>Click on <code>Import</code> tab and choose the file <code>inventorymanagementsystem.sql</code>.</li>
+        <li>Click <code>Go</code> to import the database.</li>
+      </ul>
+    </li>
+    <li>🧩 <strong>Configure Database Connection in Code:</strong>
+      <ul>
+        <li>Check your database config (usually in a DBConnection.java or similar file).</li>
+        <li>Ensure the credentials (user, password) and DB name match your XAMPP setup.</li>
+      </ul>
+    </li>
+    <li>▶️ <strong>Build and Run the Project:</strong>
+      <ul>
+        <li>Right-click on <code>Login.java</code> and select <strong>Run File</strong> in NetBeans.</li>
+        <li>Login with default admin credentials (if any provided).</li>
+      </ul>
+    </li>
   </ol>
 </div>
 
@@ -77,12 +94,12 @@ InventoryManagementApp/
 ├── admin-login-inventory.png
 ├── user-dashboard-inventory.png
 ├── login-inventroy.png
-├── inventorymanagementapp/
-│   ├── AdminDashboard.java
-│   ├── AdminLoginForm.java
-│   ├── CreateUserForm.java
-│   ├── Login.java
-│   └── Tables.java
+├── inventorymanagementapp/       # Main package containing application logic
+│   ├── AdminDashboard.java       # Admin control panel and dashboard UI
+│   ├── AdminLoginForm.java       # Admin login screen
+│   ├── CreateUserForm.java       # User registration form
+│   ├── Login.java                # Application entry point with login interface
+│   └── Tables.java               # JTable and inventory-related functionality
   </pre>
 </div>
 
@@ -90,31 +107,27 @@ InventoryManagementApp/
 
 <div>
   <h2>📸 Screenshots</h2>
-
   <h4>🔑 Login Screen</h4>
   <img src="login-inventroy.png" alt="Login Screen"/>
   <p>The initial entry point of the application, where both admins and users can log in based on their credentials.</p>
 
   <h4>💼 User Dashboard</h4>
   <img src="user-dashboard-inventory.png" alt="User Dashboard"/>
-  <p>Allows users to browse current stock, request items, or monitor availability based on access level.</p>
+  <p>Viewable after successful login. Allows users to browse current stock, request items, or monitor availability based on access level.</p>
 
   <h4>🔐 Admin Login Interface</h4>
   <img src="admin-login-inventory.png" alt="Admin Login Interface"/>
-  <p>A secure login screen for administrators, featuring username/password fields and validation.</p>
+  <p>A secure login screen for administrators, featuring username/password fields and basic validation before granting access.</p>
 
   <h4>📅 Admin Dashboard</h4>
   <img src="admin-dashboard-inventory.png" alt="Admin Dashboard"/>
-  <p>Central hub for managing users, products, and viewing inventory analytics with real-time feedback.</p>
+  <p>The central hub for managing users, products, and viewing inventory analytics. Built with intuitive navigation and real-time feedback.</p>
 </div>
 
 ---
 
-
-
 <div>
-  <h2>❓ FAQ</h2>
-
+  <h2>❓ Frequently Asked Questions (FAQ)</h2>
   <details>
     <summary><strong>Can I use this for my university project?</strong></summary>
     <p>✅ Yes! It’s ideal for academic use and learning purposes.</p>
@@ -122,12 +135,12 @@ InventoryManagementApp/
 
   <details>
     <summary><strong>Does it support a database?</strong></summary>
-    <p>✅ Yes, it is fully integrated with a MySQL backend database using XAMPP. All product data, user management, and delete operations are handled via MySQL.</p>
+    <p>✅ Yes, this project uses MySQL as the backend database. A ready-to-use SQL file (<code>inventorymanagementsystem.sql</code>) is provided for setup.</p>
   </details>
 
   <details>
     <summary><strong>Do I need XAMPP to run this?</strong></summary>
-    <p>✅ YES. XAMPP is required to run the MySQL server and phpMyAdmin interface used in this project. Ensure it is running before launching the application.</p>
+    <p>🟡 Yes. XAMPP is needed to run the MySQL server locally and manage the inventory database.</p>
   </details>
 
   <details>
@@ -136,11 +149,10 @@ InventoryManagementApp/
   </details>
 </div>
 
-
 ---
 
 <div align="center">
-  <h2>👨‍💻 Author</h2>
+  <h2>👨‍💻 Authors</h2>
   <table>
     <tr>
       <td align="center" valign="top">
@@ -171,10 +183,4 @@ InventoryManagementApp/
     </a>
   </p>
   <p>This project is licensed under the <strong>MIT License</strong> — you are free to use, modify, and distribute it with attribution.</p>
-</div>
-
----
-
-<div align="center">
-  <p>Made with ❤️ for education and practice purposes.</p>
 </div>
