@@ -145,7 +145,7 @@ InventoryManagementApp/
 
   <details>
     <summary><strong>Does it support a database?</strong></summary>
-    <p>✅ Yes, this project uses MySQL as the backend database. A ready-to-use SQL file (<code>inventorymanagementsystem.sql</code>) is provided for setup.</p>
+    <p>✅ Yes, this project uses MySQL as the backend database. A ready-to-use SQL file <pre style="font-family: monospace;"> <a href="inventorymanagementsystem.sql">inventorymanagementsystem.sql</a> is provided for setup.</p></pre> 
   </details>
 
   <details>
